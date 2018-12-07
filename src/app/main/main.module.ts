@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { MatButtonModule } from '@angular/material';
 import { MatTableModule } from '@angular/material/table';
+import { DataService } from './services/data.service';
 
 const routes: Routes = [
   {
@@ -20,6 +21,9 @@ const routes: Routes = [
     MatButtonModule,
     MatTableModule
   ],
-  declarations: [MainComponent]
+  declarations: [MainComponent],
+  providers: [
+    DataService
+  ]
 })
 export class MainModule { }
